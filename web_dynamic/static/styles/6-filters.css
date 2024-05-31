@@ -31,7 +31,8 @@ button:hover {
     font-weight: 600;
 }
 .filters h3 {
-    margin-left: 15%;
+    position: absolute;
+    margin-left: 5%;
     margin-bottom: 0;
     font-weight: 600;
 }
@@ -49,6 +50,9 @@ button:hover {
 .amenities {
     height: 100%;
     width: 25%;
+    border-right: 1px solid #DDDDDD;
+    overflow-y: auto;
+    scrollbar-width: thin;
 }
 
 .popover {
@@ -62,6 +66,7 @@ button:hover {
     overflow-y: scroll;
     scrollbar-width: none;
     max-height: 300px;
+
 }
 
 .popover::-webkit-scrollbar{
@@ -69,9 +74,11 @@ button:hover {
 }
 
 .amenities .popover {
+    position: fixed;
     padding: 10px 0;
     margin-left: -5px;
-    margin-top: 0%;
+    margin-top: 70px;
+    width: 13.35%;
 }
 
 .amenities .popover ul{
@@ -81,6 +88,7 @@ button:hover {
 .locations .popover {
     margin-top: 0%;
 }
+
 .popover ul {
     list-style-type: none;
     padding-bottom: 10px;
